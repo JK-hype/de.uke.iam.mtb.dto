@@ -18,7 +18,7 @@ public class MiracumInputDetailsDto {
     private String patientFirstName;
     private String patientLastName;
 
-    public String getPatientName() {
+    public String getPatientNameWithUnderscore() {
         return patientFirstName + "_" + patientLastName;
     }
 }
