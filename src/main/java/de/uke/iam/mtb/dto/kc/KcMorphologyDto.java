@@ -1,0 +1,22 @@
+package de.uke.iam.mtb.dto.kc;
+
+import java.sql.Date;
+import java.util.UUID;
+
+import lombok.Data;
+
+@Data
+public class KcMorphologyDto {
+
+    private UUID id;
+    private String morphology;
+    private Date date;
+    private String patientId;
+
+    public UUID getId() {
+        if (this.id == null) {
+            setId(UUID.randomUUID());
+        }
+        return this.id;
+    }
+}
